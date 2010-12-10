@@ -1,49 +1,58 @@
-= newie
+newie
+Newie for C# is the fastest dependency injection framework ever. Based in Newie for PHP and for Ruby and Python, which are based in vapor.js, newie allows you to inject your dependencies in a way that no other controller allows you.
 
-Newie for Ruby is the fastest dependency injection framework ever.
-Based in vapor.js, newie allows you to inject your dependencies in a way that no
-other controller allows you.
-
-== First example
+First example
 
 You can instantiate any dependency you need, ever:
 
-	Object.new
+        new Object();
 
-== Complex example
+Complex example
 
 For example, imagine two different models:
 
-	class Foo
-		def initialize(dependency)
-			@dependency = dependency
-		end
-	end
-	class Bar
-	end
-	
-Using newie for Ruby:
+namespace newie
+  {
+        class Foo 
+		{
+             private bar;
 
-	Foo.new(Bar.new)
-	
+             public Foo(Bar bar) 
+				{
+					this.bar = bar;
+				}
+        }
+
+        class Bar 
+		{
+        }
+ }
+Using newie for C#:
+
+        new Foo(new Bar());
 The fastest ever!
 
-= Upcoming
+Upcoming
+The Roadmap is a long way to go but we are waiting for contributions to this github as a port of newie for other languages.
 
-The Roadmap is a long way to go but we are waiting for contributions to this github as a port of newie for Java, C# and many other languages.
+Contributing to newie
 
-== Contributing to newie
- 
-* Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
-* Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it
-* Fork the project
-* Start a feature/bugfix branch
-* Commit and push until you are happy with your contribution
-* Make sure to add tests for it. This is important so I don't break it in a future version unintentionally.
-* Please try not to mess with the Rakefile, version, or history. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so I can cherry-pick around it.
+Check out the latest master to make sure the feature hasn’t been implemented or the bug hasn’t been fixed yet
+Check out the issue tracker to make sure someone already hasn’t requested it and/or contributed it
+Fork the project
+Start a feature/bugfix branch
+Commit and push until you are happy with your contribution
+Make sure to add tests for it. This is important so I don’t break it in a future version unintentionally.
+Please try not to mess with the Rakefile, version, or history. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so I can cherry-pick around it.
+Copyright
 
-== Copyright
 
-Copyright (c) 2010 guilherme silveira. See LICENSE.txt for
-further details.
+Copyright © 2010 Bruno Alvares da Costa
 
+Copyright © 2010 Lucas Souza
+
+Copyright © 2010 Pedro Matiello
+
+Copyright © 2010 Guilherme Silveira
+
+See COPYING for further details
