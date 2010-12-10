@@ -11,8 +11,7 @@ Complex example
 
 For example, imagine two different models:
 
-namespace newie
-  {
+
         class Foo 
 		{
              private bar;
@@ -26,7 +25,7 @@ namespace newie
         class Bar 
 		{
         }
- }
+ 
 Using newie for C#:
 
         new Foo(new Bar());
