@@ -18,9 +18,9 @@ namespace newie
              private bar;
 
              public Foo(Bar bar) 
-				{
-					this.bar = bar;
-				}
+			{
+				this.bar = bar;
+			}
         }
 
         class Bar 
